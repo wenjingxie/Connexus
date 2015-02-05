@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.wenjing.connexus.NearbyFragment">
+
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/pic_nearby_gridView"
+        android:layout_width="wrap_content"
+        android:layout_height="313dp"
+        android:numColumns="@integer/column_count"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="none"
+        android:listSelector="@null"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/more_nearby_button" />
+
+    <TextView
+        android:id="@+id/text_nearby_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nearby pictures"
+        android:textSize="30sp"
+        android:layout_alignBottom="@+id/more_nearby_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/streams_nearby_button"
+        android:text="View All Streams"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <Button
+        android:id="@+id/more_nearby_button"
+        android:text="More Pictures"
+        android:layout_width="106dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/streams_nearby_button" />
+
+</RelativeLayout>

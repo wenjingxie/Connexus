@@ -1,0 +1,38 @@
+application: aptconnexus11
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /file
+  static_dir: file
+- url: /geo
+  static_dir: geo
+- url: /auto
+  static_dir: auto
+- url: /(favicon\.ico|robots\.txt)
+  static_files: static/\1
+  upload: static/(.*)
+  expiration: '1d'
+- url: /test
+  script: Test.application
+- url: /reload/.*
+  script: viewSingle.application
+- url: /viewSingle/.*/.*/.*
+  script: viewSingle.application
+- url: /imgUploadHandler/.*
+  script: viewSingle.application
+- url: /getNewImg
+  script: viewSingle.application
+- url: /geoView/.*
+  script: geoView.application
+- url: /geoViewAPI/.*
+  script: geoView.application
+
+- url: /.*
+  script: connexus.application
+
+libraries:
+- name: webapp2
+  version: "2.5.2"

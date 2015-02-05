@@ -1,0 +1,7 @@
+cron:
+- description: daily summary job
+  url: /tasks/summary
+  schedule: every 1 mins
+- description: autocomplete data
+  url: /tasks/auto
+  schedule: every 1 hours

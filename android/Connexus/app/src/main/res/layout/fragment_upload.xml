@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/upload_fragment"
+    tools:context="com.example.wenjing.connexus.UploadFragment">
+
+    <TextView
+        android:id="@+id/name_upload_textView"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="@string/stream"
+        android:layout_alignParentBottom="true" />
+
+    <Button
+        android:id="@+id/image_library_upload_button"
+        android:text="Choose from your library"
+        android:layout_width="343dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/camera_upload_button"
+        android:text="Use Camera"
+        android:layout_width="106dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_library_upload_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/image_library_upload_button"
+        android:layout_alignEnd="@+id/image_library_upload_button" />
+
+    <EditText
+        android:layout_width="280dp"
+        android:layout_height="160dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:hint="Add message or/and tag"
+        android:id="@+id/tag_upload_textView"
+        android:layout_below="@+id/imageView_upload_imageView"
+        android:layout_alignParentLeft="true" />
+
+
+    <Button
+        android:id="@+id/upload_upload_button"
+        android:text="Upload"
+        android:layout_width="106dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tag_upload_textView"
+        android:layout_above="@+id/name_upload_textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:id="@+id/imageView_upload_imageView"
+        android:layout_below="@+id/camera_upload_button" />
+
+</RelativeLayout>

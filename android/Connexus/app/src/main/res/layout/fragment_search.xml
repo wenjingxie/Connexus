@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.wenjing.connexus.SearchFragment">
+
+
+    <EditText
+        android:id="@+id/keyword_search_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Keyword to search"
+        android:layout_alignParentTop="true"/>
+
+    <Button
+        android:id="@+id/search_search_button"
+        android:text="Search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/keyword_search_editText"
+        android:layout_alignRight="@+id/keyword_search_editText"
+        android:layout_alignEnd="@+id/keyword_search_editText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:id="@+id/result_search_textView"
+        android:layout_below="@+id/search_search_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Click on an image to view stream"
+        android:id="@+id/hint_click_search_textView"
+        android:layout_below="@+id/result_search_textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/result_search_gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="@integer/column_count"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="none"
+        android:listSelector="@null"
+        android:layout_above="@+id/more_search_button"
+        android:layout_below="@+id/hint_click_search_textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <Button
+        android:id="@+id/more_search_button"
+        android:text="More search results"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>

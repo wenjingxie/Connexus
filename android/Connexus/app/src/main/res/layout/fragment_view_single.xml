@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.wenjing.connexus.ViewSingleFragment"
+    android:id="@+id/viewSingle">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/pic_viewSingle_gridView"
+        android:layout_width="wrap_content"
+        android:layout_height="313dp"
+        android:numColumns="@integer/column_count"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="none"
+        android:listSelector="@null"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/more_viewSingle_button"/>
+
+    <Button
+        android:id="@+id/streams_viewSingle_button"
+        android:text="Streams"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <Button
+        android:id="@+id/more_viewSingle_button"
+        android:text="More Pictures"
+        android:layout_width="106dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/upload_viewSingle_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/upload_viewSingle_button"
+        android:text="Upload an Image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/streams_viewSingle_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
